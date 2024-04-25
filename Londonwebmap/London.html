@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - London</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>London Entertainment Facilities</title>
+  <meta name='author' content='Chao Gao' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  
+  <!-- Mapbox JS API !-->
+  
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+  
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  
+  <!-- Fonts1!-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  
+   <!-- Fonts2!-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <!-- Fonts3!-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet">
+  
+</head>
+
+<body>
+  
+  <div id='map'></div>
+  
+  <!–– Define the title box––>
+  <div id='titlebox'>
+  <h3><span style="font-size:50px">London<br></span></h3> 
+  <h2>Entertainment Facilities</h2>
+  <p align="center"><span style="color:white">Datasouce: <a href='https://data.london.gov.uk/dataset/cultural-infrastructure-map'>Cultural Infrastructure Map</a></p>
+    
+  <!–– Define legend––>
+  <div id='legend'>
+  <h3><span style="font-size:20px">LEGENDS</span></h3>
+  <div class"legend-item">  
+     
+  <div class="icon pubs"></div><br>
+     
+  <div class="icon theatres"><span style = "font-size:1em; float:center"> </span></div><br> 
+  <div class="icon makerspaces"><span style = "font-size:1em; float: center;"></span></div><br>
+  <div class="icon artscentres"><span style = "font-size:1em; float: center;"> </span></div><br>
+     </div>
+
+    <!--Define dropup button box-->
+  <div id = "types" class="dropup">
+  <button class="dropbtn" id='typestext'> LET's Go<br> <span id = 'lvlselected' style = "font-size: 2em">!For FUN!</span> </button>
+  <div class="dropup-content">
+    
+  <button class = 'lvl' id="lvl_pub" onclick="myFilterFunction('pub', 'Pubs')">Pubs</button>
+    
+  <button class = 'lvl' id="lvl_theatre" onclick="myFilterFunction('theatres', 'Theatres')">Theatres</button>
+    
+  <button class = 'lvl' id="lvl_makerspace"onclick="myFilterFunction('maker', 'Makerspaces')">Makerspaces</button>
+    
+  <button class = 'lvl' id="lvl_artcentre"onclick="myFilterFunction('art', 'Artscentres')">Artscentres</button><
+    
+</div>
+</div>
+  
+      <!-- Add some API -->
+ <script  src="./script.js"></script>
+ <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+ <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#map {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ width: 100%;
+}
+
+/* A Big Title style font */
+h1 {
+ font-size: 20px;
+ line-height: 30px;
+ font-weight:900;
+ color: Red;
+ font-family: "Roboto Slab";
+ 
+}
+/* A Rainbow style font */
+h2 {
+ font-size: 30px;
+ line-height: 20px;
+ font-family: "Gajraj One";  
+ margin-bottom: 10px;
+ color: rgb(50,50,50); 
+ background: linear-gradient(to right, red, orange,yellow,green,cyan,blue,purple);
+-webkit-background-clip: text;
+fill-color: transparent;
+color: transparent;
+width: 19em;	
+}
+
+a {
+ font-size: 10px;
+ line-height: 20px;
+ position:center;
+ font-family: "Roboto Slab";  
+ margin-bottom: 10px;
+ color: white; 
+ 
+text-align: center;
+}
+
+/*style for titlebox*/
+#titlebox {
+ position: fixed;
+ left:0px;
+ top:0px;
+ width: 403px;
+ margin: 20px;
+ padding: 10px;
+ background: rgba(0, 0, 100, 0.5);
+ border-radius: 10px;
+ font-family: Lato, sans-serif;
+}
+
+/* Style for heading in pop-up window */
+h3 {
+  border-top: 1em blue;
+  font-family: "Press Start 2P";
+  color:red;
+  font-size:20px;
+  text-align: center;
+}
+
+/* Style for paragraph in pop-up window */
+p {
+  font-size: 15px;
+  font-family: "Roboto Slab", sans-serif;
+  margin-top: 0em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+/* Style for pop-up window */
+.my-popup .mapboxgl-popup-content {
+  width: 180px;
+  background: rgba(0, 0, 100, 0.6);
+  border-top: 0px black;
+  padding: 20px;
+  padding-top:0px;
+  padding-bottom:0px;
+  color: white;
+  text-align: center;
+}
+.icon-popup .mapboxgl-popup-content {
+  background: rgba(0, 0, 100, 0.6);
+  border-top: 0px black;
+  padding: 20px;
+  color: white;
+  font-family: "Press Start 2P";
+  font-size:10px;
+  padding: 6px;
+  text-align: center;
+}
+
+/* Dropup Button */
+.dropbtn {
+  background-color: rgba(255,200, 0, 1);
+  color: white;
+  padding: 10px;
+  bottom: 10px;
+  font-family:"Press Start 2P";
+  font-size: 10px;
+  border: none;
+  text-shadow:1px 1px 4px #000000;
+  line-height:1.3;
+}
+
+/* The container to position the dropup content */
+.dropup {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 30px;
+  box-shadow: 3px 3px 2px 2px rgba(0,0,0,0.3);
+}
+
+/* Dropup content */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(0,220,0, 1);
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.lvl {
+  color: black;
+  padding: 12px 16px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  min-width: 100%;
+  font-family:"Press Start 2P";
+  font-size:12px;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content button:hover {background-color: rgba(255,200, 0, 1)}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  background-color: rgba(255,130,255,1);
+}
+
+/* Style for legend */
+#legend {
+ position:absolute;
+ bottom:0;
+ left:0;
+ text-align: center; 
+ position: fixed;
+ width: 250px;
+ margin: 20px;
+ padding: 10px 10px;
+ background-color: rgba(255,255,250,0.3);
+ border-radius: 10px;
+ font-family: Roboto Slab, sans-serif;
+}
+
+/*set legend-items*/
+.legend-item{
+  align-items:middle;
+  margin:5px;
+  margin_bottom:10px;
+}
+
+/*add icon images*/
+.icon{
+  wideth:30px;
+  height:20px;
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+
+.pubs{
+  background-image:    url(https://raw.githubusercontent.com/Issaccg/icon/main/bar.svg)
+}
+
+.theatres{
+  background-image:   url(https://raw.githubusercontent.com/Issaccg/icon/main/theatre.svg)
+}
+
+.makerspaces{
+  background-image: url(https://raw.githubusercontent.com/Issaccg/icon/main/hardware.svg) 
+}
+
+.artscentres{
+  background-image:  url(https://raw.githubusercontent.com/Issaccg/icon/main/art-gallery.svg)
+}
